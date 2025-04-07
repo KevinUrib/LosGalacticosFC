@@ -6,21 +6,51 @@ header {
     background-color: #002f6c;
     color: white;
   }
-  .navbar-brand span {
-    color: #ffd700;
-    font-weight: bold;
-  }
-  .form-container {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  }
 
-  .nav-link:hover, .btn:hover {
-    opacity: 0.8;
-    transition: all 0.3s ease;
-  }
+/* Estilos para la navbar */
+.navbar {
+  background: linear-gradient(90deg, #002f6c, #002f6c) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffd700 !important;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  position: relative;
+  padding: 0.5rem 1rem !important;
+  margin: 0 0.2rem;
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #ffd700;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+}
 
   h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
@@ -49,3 +79,12 @@ header {
   footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
+  .social a {
+    color: #ffffff;  /* Cambio a blanco para mejor contraste */
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #ffd700;  /* Dorado al hover, matching con otros elementos */
+}
