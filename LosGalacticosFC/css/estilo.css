@@ -88,3 +88,21 @@ header {
 .social a:hover {
     color: #ffd700;  /* Dorado al hover, matching con otros elementos */
 }
+/* ======== Estilos para las pestañas ======== */
+
+/* Estilo base de todas las pestañas */
+.nav-tabs .nav-link {
+  color: #002f6c;
+  background-color: #002f6c; 
+  font-weight: 700;
+}
+
+/* Pestaña activa */
+.nav-tabs .nav-link.active {
+  background-color: #17181a;
+  color: #212529;
+  font-weight: bold;
+}
+
+
+
