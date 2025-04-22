@@ -1,5 +1,5 @@
 header {
-    background: linear-gradient(90deg, #002f6c, #d40000);
+    background: linear-gradient(90deg, #358f26, #002f6c);
     color: white;
   }
   footer {
@@ -9,14 +9,14 @@ header {
 
 /* Estilos para la navbar */
 .navbar {
-  background: linear-gradient(90deg, #002f6c, #002f6c) !important;
+  background: linear-gradient(90deg , #0e2a55,#0e2a55) !important;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .navbar-brand {
   font-weight: 700;
   font-size: 1.5rem;
-  color: #ffd700 !important;
+  color: #ffff !important;
   transition: transform 0.3s ease;
 }
 
@@ -28,7 +28,7 @@ header {
   position: relative;
   padding: 0.5rem 1rem !important;
   margin: 0 0.2rem;
-  color: #ffffff !important;
+  color: #ffff !important;
   transition: color 0.3s ease;
 }
 
@@ -39,7 +39,7 @@ header {
   height: 2px;
   bottom: 0;
   left: 50%;
-  background-color: #ffd700;
+  background-color: #358f26 ;
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -117,4 +117,3 @@ header {
 body {
     padding-top: 0;
 }
-
