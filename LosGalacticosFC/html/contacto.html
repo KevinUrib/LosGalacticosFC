@@ -44,10 +44,11 @@
 
   <!-- Contenido principal -->
   <main class="container py-5" style="margin-top: 230px;">
-    <!-- Formulario de Contacto -->
+    <!-- Sección de formularios en paralelo -->
     <div class="row mb-5">
-      <div class="col-lg-8 mx-auto">
-        <div class="form-container">
+      <!-- Formulario de Contacto -->
+      <div class="col-lg-6">
+        <div class="form-container h-100">
           <h2 class="text-center mb-4">Contáctanos</h2>
           <form action="#" method="POST">
             <div class="mb-3">
@@ -64,18 +65,16 @@
             </div>
             <div class="mb-3">
               <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+              <textarea class="form-control" id="mensaje" rows="3" required="" style="height: 84px;"></textarea>
             </div>
             <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
           </form>
         </div>
       </div>
-    </div>
-  
-    <!-- Formulario de Registro para Noticias -->
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <div class="form-container">
+      
+      <!-- Formulario de Registro para Noticias -->
+      <div class="col-lg-6">
+        <div class="form-container h-100">
           <h2 class="text-center mb-4">Regístrate para Noticias</h2>
           <form action="#" method="POST">
             <div class="mb-3">
@@ -90,7 +89,7 @@
               <label for="telefono" class="form-label">Teléfono (opcional)</label>
               <input type="tel" class="form-control" id="telefono" placeholder="####-####">
             </div>
-            <div class="mb-3">
+            <div class="mb-4">
               <label class="form-label">Intereses</label>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="noticias">
@@ -105,8 +104,46 @@
                 <label class="form-check-label" for="boletines">Boletines semanales</label>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+            <button type="submit" class="btn btn-primary w-100" mt-1>Registrarse</button>
           </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mapa de Google -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="text-center mb-4">Ubicación del Estadio</h2>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.496317124576!2d-3.6905224!3d40.4230001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289a4a865f7b%3A0x9d258a1b6e7c09e0!2sEstadio%20Santiago%20Bernab%C3%A9u!5e0!3m2!1ses!2ses!4v1623256789012!5m2!1ses!2ses" 
+                  allowfullscreen="" 
+                  loading="lazy"
+                  class="rounded shadow"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Información de contacto adicional -->
+    <div class="row">
+      <div class="col-md-4 text-center mb-4">
+        <div class="p-4 bg-light rounded">
+          <i class="fas fa-map-marker-alt fa-3x mb-3 text-primary"></i>
+          <h3>Dirección</h3>
+          <p>Av. de Concha Espina, 1, 28036 Oaxaca, Mexico</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center mb-4">
+        <div class="p-4 bg-light rounded">
+          <i class="fas fa-phone-alt fa-3x mb-3 text-primary"></i>
+          <h3>Teléfono</h3>
+          <p>+01 800 98 43 00</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center mb-4">
+        <div class="p-4 bg-light rounded">
+          <i class="fas fa-envelope fa-3x mb-3 text-primary"></i>
+          <h3>Email</h3>
+          <p>contacto@losgalacticosfc.com</p>
         </div>
       </div>
     </div>
