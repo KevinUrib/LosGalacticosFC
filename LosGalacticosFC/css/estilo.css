@@ -123,3 +123,11 @@ li .Lactive{
   font-weight: bolder;
   text-transform: uppercase;
 }
+
+/* Logo Brand del Navbar */
+nav a img{
+  width: 40px; /* o el tamaño que necesites */
+  height: auto; /* mantiene la proporción */
+  max-height: 40px; /* opcional: limita la altura máxima */
+  object-fit: contain; /* controla cómo se ajusta la imagen */
+}
