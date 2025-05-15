@@ -20,6 +20,42 @@
     </div>
 </header>
 
+<!-- Tarjetas de estadisticas por trofeos -->
+ <div class="row text-center mb-5" style="color: #fff;">
+  <div class="col-md-3">
+    <div class="card shadow-sm border-0 bg-primary text-white">
+      <div class="card-body">
+        <h5 class="card-title">🏆 Campeonatos</h5>
+        <p class="display-6 fw-bold">4</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card shadow-sm border-0 bg-danger text-white">
+      <div class="card-body">
+        <h5 class="card-title">🌍 Internacionales</h5>
+        <p class="display-6 fw-bold">1</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card shadow-sm border-0 bg-warning text-dark">
+      <div class="card-body">
+        <h5 class="card-title">🥇 Supercopas</h5>
+        <p class="display-6 fw-bold">1</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card shadow-sm border-0 bg-info text-white">
+      <div class="card-body">
+        <h5 class="card-title">⚽ Apertura</h5>
+        <p class="display-6 fw-bold">1</p>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- Menú de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="top: 140px;">
     <div class="container">
@@ -43,35 +79,260 @@
   </nav>
 
   <!-- Contenido principal -->
-  <main class="container py-5" style="margin-top: 230px;">
-    <h2 class="text-center mb-4">Palmarés del Club</h2>
-    <div>
-      <img src="img/Trophy.jpg" alt="Trofeo" class="img-fluid mx-auto d-block rounded shadow mt-4" style="max-width: 600px;">
-    </div>
-    <br>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Campeonato Nacional 2021
-            <img src="img/Campeonato N.jpg" width="100px" height="100px" class="img-fluid rounded mx-2" alt="trophy nacional">
-          </li>
-          <li class="list-group-item d-flex  justify-content-between align-items-center">
-            Copa Libertadores 2022
-            <img src="img/Libertadores.jpg" width="100px" height="100px" class="img-fluid rounded mx-2" alt="trophy libertadores">
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Supercopa 2023
-            <img src="img/Supercopa.jpg" width="100px" height="100px" class="img-fluid rounded mx-2" alt="trophy supercopa">
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Torneo Apertura 2024
-            <img src="img/Apertura.jpg" width="100px" height="100px" class="img-fluid rounded mx-2" alt="trophy apertura">
-          </li>
-        </ul>
-        <p class="mt-4 text-center " >Seguimos construyendo nuestra historia con pasión y entrega.</p>
+  <main class="container py-5" style="margin-top: 40px;">
+    <h2 class="text-center mb-5">Palmarés del Club</h2>
+  
+    <!-- Infografía tipo tarjetas -->
+    <div class="row text-center mb-5">
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 text-white" style="background: linear-gradient(90deg, #358f26, #002f6c);">
+          <div class="card-body">
+            <h5 class="card-title">🏆 Campeonatos</h5>
+            <p class="display-6 fw-bold">4</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 text-white" style="background: linear-gradient(90deg, #358f26, #002f6c);">
+          <div class="card-body">
+            <h5 class="card-title">🌍 Internacionales</h5>
+            <p class="display-6 fw-bold">1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 text-white" style="background: linear-gradient(90deg, #358f26, #002f6c);">
+          <div class="card-body">
+            <h5 class="card-title">🥇 Supercopas</h5>
+            <p class="display-6 fw-bold">1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow-sm border-0 text-white" style="background: linear-gradient(90deg, #358f26, #002f6c);">
+          <div class="card-body">
+            <h5 class="card-title">⚽ Apertura</h5>
+            <p class="display-6 fw-bold">1</p>
+          </div>
+        </div>
       </div>
     </div>
+  
+<!-- Lista de trofeos -->
+<div class="row justify-content-center">
+  <div class="col-md-8">
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center trophy-card" data-bs-toggle="modal" data-bs-target="#modalCampeonato">
+        <span><i class="fas fa-trophy text-warning me-2"></i> Campeonato Nacional 2021</span>
+        <img src="img/Campeonato N.jpg" width="80" height="80" class="img-fluid rounded" alt="Campeonato Nacional">
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center trophy-card" data-bs-toggle="modal" data-bs-target="#modalCampeonato2">
+        <span><i class="fas fa-trophy text-warning me-2"></i> Copa Libertadores 2022</span>
+        <img src="img/Libertadores.jpg" width="80" height="80" class="img-fluid rounded" alt="Copa Libertadores">
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center trophy-card" data-bs-toggle="modal" data-bs-target="#modalCampeonato3">
+        <span><i class="fas fa-trophy text-warning me-2"></i> Supercopa 2023</span>
+        <img src="img/Supercopa.jpg" width="80" height="80" class="img-fluid rounded" alt="Supercopa">
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center trophy-card" data-bs-toggle="modal" data-bs-target="#modalCampeonato4">
+        <span><i class="fas fa-trophy text-warning me-2"></i> Campeonato Apertura 2024</span>
+        <img src="img/Apertura.jpg" width="80" height="80" class="img-fluid rounded" alt="Campeonato Apertura">
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Modales para cada trofeo -->
+<div class="modal fade" id="modalCampeonato" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Campeonato Nacional 2021</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="text-center mb-4">Resultados Destacados</h6>
+        <div class="match-results">
+          <div class="match-result">
+            <span class="team winner">Los Galácticos FC</span>
+            <span class="score">3 - 1</span>
+            <span class="team">Deportivo Rival</span>
+            <small class="round">Final</small>
+          </div>
+          <div class="match-result">
+            <span class="team winner">Los Galácticos FC</span>
+            <span class="score">2 - 0</span>
+            <span class="team">Club Atlético</span>
+            <small class="round">Semifinal</small>
+          </div>
+          <div class="match-result">
+            <span class="team winner">Los Galácticos FC</span>
+            <span class="score">4 - 2</span>
+            <span class="team">Real Deportivo</span>
+            <small class="round">Cuartos de Final</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCampeonato2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Copa Libertadores 2022</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="text-center mb-4">Resultados Destacados</h6>
+        <div class="match-results">
+          <div class="match-result">
+            <span class="team winner">Los Galácticos FC</span>
+            <span class="score">2 - 1</span>
+            <span class="team">River Plate</span>
+            <small class="round">Final</small>
+          </div>
+          <div class="match-result">
+            <span class="team winner">Los Galácticos FC</span>
+            <span class="score">2 - 0</span>
+            <span class="team">Club Atlético Miraldao</span>
+            <small class="round">Semifinal</small>
+          </div>
+          <div class="match-result">
+            <span class="team winner">Los Galácticos FC</span>
+            <span class="score">4 - 2</span>
+            <span class="team">Real Deportivo Coruña</span>
+            <small class="round">Cuartos de Final</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCampeonato3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Supercopa 2023</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="text-center mb-4">Resultados Destacados</h6>
+        <div class="match-results">
+          <div class="match-result">
+            <span class="team winner">Los Galácticos FC</span>
+            <span class="score">4 - 3</span>
+            <span class="team">Real Madrid</span>
+            <small class="round">Final</small>
+          </div>
+          <div class="match-result">
+            <span class="team winner">Los Galácticos FC</span>
+            <span class="score">2 - 1</span>
+            <span class="team">Atletico de Madrid</span>
+            <small class="round">Semifinal</small>
+          </div>
+          <div class="match-result">
+            <span class="team winner">Los Galácticos FC</span>
+            <span class="score">4 - 2</span>
+            <span class="team">Atalanta</span>
+            <small class="round">Cuartos de Final</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCampeonato4" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Campeonato Apertura 2024</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="text-center mb-4">Resultados Destacados</h6>
+        <div class="match-results">
+          <div class="match-result">
+            <span class="team winner">Los Galácticos FC</span>
+            <span class="score">1 - 0</span>
+            <span class="team">Alianza FC</span>
+            <small class="round">Final</small>
+          </div>
+          <div class="match-result">
+            <span class="team winner">Los Galácticos FC</span>
+            <span class="score">2 - 0</span>
+            <span class="team">Metapan</span>
+            <small class="round">Semifinal</small>
+          </div>
+          <div class="match-result">
+            <span class="team winner">Los Galácticos FC</span>
+            <span class="score">4 - 2</span>
+            <span class="team">Club Deportivo FAS</span>
+            <small class="round">Cuartos de Final</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      <div id="carouselTrophies" class="carousel slide mt-5 carousel-trophies" data-bs-ride="carousel" data-aos="zoom-in">
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <div class="trophy-slide">
+              <img src="img/Campeonato N.jpg" alt="Trofeo 1">
+              <div class="trophy-caption">
+                <h5>Orgullo Nacional</h5>
+                <p>Campeonato Nacional 2021</p>
+                <p>Campeones Nacionales: 2016, 2018, 2019, 2021</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="trophy-slide">
+              <img src="img/Libertadores.jpg" alt="Trofeo 2">
+              <div class="trophy-caption">
+                <h5>Conquista Continental</h5>
+                <p>Copa Libertadores 2022</p>
+                <p>Campeones Copa Libertadores: 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="trophy-slide">
+              <img src="img/Supercopa.jpg" alt="Trofeo 2">
+              <div class="trophy-caption">
+                <h5>Conquista Regional</h5>
+                <p>Supercopa 2023</p>
+                <p>Campeones Supercopa: 2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="trophy-slide">
+              <img src="img/Apertura.jpg" alt="Trofeo 2">
+              <div class="trophy-caption">
+                <h5>Conquista Mundial</h5>
+                <p>Campeonato apertura</p>
+                <p>Campeones Copa Apertura: 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrophies" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTrophies" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  
+    <p class="text-center mt-4">Seguimos construyendo nuestra historia con pasión y entrega.</p>
   </main>
 
   <!-- Pie de página -->
@@ -87,5 +348,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>

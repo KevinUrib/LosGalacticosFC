@@ -123,3 +123,261 @@ li .Lactive{
   font-weight: bolder;
   text-transform: uppercase;
 }
+
+.trophy-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.trophy-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+  border-left: 5px solid #ffd700;
+}
+
+.carousel-trophies {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.trophy-slide {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.trophy-slide img {
+  max-height: 350px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.trophy-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  padding: 15px;
+  text-align: center;
+}
+
+.trophy-caption h5 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.trophy-caption p {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 768px) {
+  .trophy-slide {
+    height: 250px;
+  }
+  
+  .trophy-slide img {
+    max-height: 200px;
+  }
+  
+  .trophy-caption h5 {
+    font-size: 1rem;
+  }
+  
+  .trophy-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Estilos para las pestañas de competiciones */
+#competicionesTab .nav-link {
+  color: #002f6c;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+#competicionesTab .nav-link:hover {
+  background-color: rgba(53, 143, 38, 0.1);
+}
+
+#competicionesTab .nav-link.active {
+  color: white;
+  background: linear-gradient(90deg, #358f26, #002f6c);
+  border: none;
+}
+
+/* Estilos para las tablas */
+.table thead {
+  background: linear-gradient(90deg, #358f26, #002f6c);
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(53, 143, 38, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Resaltar equipo propio */
+tr:has(td:contains("Los Galácticos FC")) {
+  font-weight: bold;
+  background-color: rgba(53, 143, 38, 0.05);
+}
+
+
+/* Estilos para las tablas de posiciones */
+.table-responsive table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table tbody tr {
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.table tbody tr:hover {
+  background: linear-gradient(90deg, rgba(53, 143, 38, 0.1), rgba(0, 47, 108, 0.1));
+  transform: translateX(5px);
+  border-left: 3px solid #358f26;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilo especial para el equipo Los Galácticos FC */
+.table tbody tr:has(td:contains("Los Galácticos FC")) {
+  font-weight: bold;
+}
+
+.table tbody tr:has(td:contains("Los Galácticos FC")):hover {
+  background: linear-gradient(90deg, rgba(53, 143, 38, 0.2), rgba(0, 47, 108, 0.2));
+  border-left: 3px solid #002f6c;
+}
+
+/* Estilos para las posiciones */
+.table td:first-child {
+  font-weight: bold;
+  color: #002f6c;
+}
+
+/* Estilos para los puntos */
+.table td:last-child {
+  font-weight: bold;
+  color: #358f26;
+}
+
+/* Encabezado de la tabla */
+.table thead tr {
+  background: linear-gradient(90deg, #358f26, #002f6c);
+  color: white;
+}
+
+.table thead th {
+  padding: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+
+/* Estilos para las tarjetas de trofeos */
+.trophy-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.trophy-card:hover {
+  background-color: rgba(53, 143, 38, 0.1);
+  transform: translateX(5px);
+  border-left: 3px solid #358f26;
+}
+
+/* Estilos para el modal */
+.modal-content {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+  background: linear-gradient(90deg, #358f26, #002f6c);
+  color: white;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+/* Estilos para los resultados de partidos */
+.match-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.match-result {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.match-result:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.match-result .team {
+  flex: 1;
+  text-align: center;
+  font-weight: 500;
+}
+
+.match-result .score {
+  padding: 0.25rem 1rem;
+  background: linear-gradient(90deg, #358f26, #002f6c);
+  color: white;
+  border-radius: 20px;
+  margin: 0 1rem;
+}
+
+.match-result .winner {
+  color: #358f26;
+  font-weight: bold;
+}
+
+.match-result .round {
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #002f6c;
+  color: white;
+  padding: 0.2rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
