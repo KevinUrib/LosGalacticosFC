@@ -427,3 +427,54 @@ tr:has(td:contains("Los Galácticos FC")) {
 99.999% { transform: translateX(-50%); } 
 100% { transform: translateX(0); } /* Reinicio instantáneo */
 }
+
+/* Cambios Krissia */
+/* Estilo para los parrafos de historia */
+.titulo{
+  font-family: "poppins";
+  font-size: 20px;
+  font-style: italic;
+  padding: 20px;
+}
+/* estilo de las fotos texto en el index*/
+.card-body1{
+  color: whitesmoke;
+  font-family:"poppins";
+  background: linear-gradient(90deg,#002f6c,  #358f26);
+ padding: 20px;
+ text-align:center;
+}
+
+.picture{
+  padding: 20px;
+}
+
+.title2{
+  font-family:"poppins";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.pulse-effect {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  font-family: monospace;
+  border-radius: 5px;
+  background-color: #007bff; /* Color base del botón */
+  transition: transform 0.3s ease-in-out; /* Transición suave del efecto de pulsación */
+}
+
+.pulse-effect:hover {
+
+  background-color: #358f26; /* Cambia el color al pasar el cursor sobre el botón */
+}
+
+.pulse-effect:active {
+  transform: scale(0.9); /* Reduce ligeramente el tamaño del botón cuando se hace clic */
+}
