@@ -389,3 +389,41 @@ tr:has(td:contains("Los Galácticos FC")) {
   border-radius: 20px;
   font-size: 0.8rem;
 }
+
+/* Estilos del carrusel de contacto */
+
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+  background: #0e2a55;
+  height: 60px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.ticker-track {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: ticker-scroll 20s linear infinite;
+}
+.ticker-item {
+    flex-shrink: 0;
+    width: auto;
+    height: 60px;
+    padding: 0 10px;
+}
+.ticker-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes ticker-scroll {
+0% { transform: translateX(0); }
+/* Hacemos que la animación termine JUSTO antes del reinicio */
+99.999% { transform: translateX(-50%); } 
+100% { transform: translateX(0); } /* Reinicio instantáneo */
+}
