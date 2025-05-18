@@ -437,13 +437,19 @@ tr:has(td:contains("Los Galácticos FC")) {
   padding: 20px;
 }
 /* estilo de las fotos texto en el index*/
-.card-body1{
+.card-body1 {
   color: whitesmoke;
-  font-family:"poppins";
-  background: linear-gradient(90deg,#002f6c,  #358f26);
- padding: 20px;
- text-align:center;
+  font-family: "Poppins";
+  background: 
+    linear-gradient(90deg, rgba(0, 47, 108, 0.89), rgba(53, 143, 38, 0.9)),
+    var(--card-bg) center/cover no-repeat;
+  padding: 20px;
+  text-align: center;
+  min-height: 200px; /* Ajusta según necesites */
+  border-radius: 8px; /* Opcional: bordes redondeados */
 }
+
+
 
 .picture{
   padding: 20px;
@@ -478,3 +484,4 @@ tr:has(td:contains("Los Galácticos FC")) {
 .pulse-effect:active {
   transform: scale(0.9); /* Reduce ligeramente el tamaño del botón cuando se hace clic */
 }
+
